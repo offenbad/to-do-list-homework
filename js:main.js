@@ -75,6 +75,9 @@ function App() {
  */
 // write your code for getItemFromList here...
     function getItemFromList( arr, i ) {
+        if ( typeof arr[i] === 'undefined' ) {
+        return -1;
+        }
         var item = arr[i];
         return item;
     }
@@ -89,6 +92,9 @@ function App() {
  */
 // write your code for removeItemFromPosition here...
     function removeItemFromPosition( arr, i ) {
+        if ( typeof arr[i] === 'undefined' ) {
+        return -1;
+        }
         arr.splice( i, 1 );
         return arr;
     }
